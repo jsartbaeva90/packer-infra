@@ -17,13 +17,18 @@
           "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
           "sudo yum install jenkins -y",
           "sudo systemctl enable jenkins",
-          "sudo systemctl start jenkins"
+          "sudo systemctl start jenkins",
+          "echo '<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCixw7lAgkViLsy7+5wD1FdyiPhmhbL2+gkbmr7kFZLMpgU8GYyO4+FzRNA0Q0HdAV9U6N9iP6fFCv3EoSo0oblxYdX95aRI3RipTu/a8qaDhHXq3Wwj8zHWkGT2Og9rN4+aEbam6mWoP5SHVNiwfVFhaMduDJGSnsfQ5s7W1EWK6M2haul/tiLl6JL9nEtwWPHHcbZq/JA1SmKiDu0MlI4KnfsVFbjfltD/CrrqrH4G0cUBdCqeIu5WxX95kPISvFuDThUD0Pmr0M6macdZSJ7E/uhv0Ab8bFjdO615xuPTmhw67z7eBNdd0lT3r7DkIyhrwy3UwPyiqORRWqe/Q7t zhazgulsartbaeva@Zhazguls-MBP>' | tee /root/.ssh/authorized_keys"
         ]
       },
       {
-        "type": "breakpoint",
-        "note": "Test Jenkins",
+        "type": "file",
+        "source": "test_file",
         "destination": "/tmp/test_file"
-    }
+      },
+      {
+        "type": "breakpoint",
+        "note": "Test Jenkins"  
+      }
     ]
   }
