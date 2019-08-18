@@ -22,7 +22,8 @@
       },
       {
         "type": "breakpoint",
-        "note": "Something"
-      }
+        "note": "Test Jenkins",
+        "destdestination": "/tmp/test_file"
+    }
     ]
   }
