@@ -23,7 +23,7 @@
       {
         "type": "breakpoint",
         "note": "Test Jenkins",
-        "destdestination": "/tmp/test_file"
+        "testdestination": "/tmp/test_file"
     }
     ]
   }
